@@ -82,5 +82,4 @@ Acesse a aplicação em: [http://localhost:8080](http://localhost:8080)
 ```bash
 docker-compose logs -f
 
-
 ```
