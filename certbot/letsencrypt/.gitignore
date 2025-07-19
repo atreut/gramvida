@@ -1,0 +1,9 @@
+*
+!.gitignore
+!options-ssl-nginx.conf
+!ssl-dhparams.pem
+!live
+!live/default
+!live/default/.gitkeep
+!live/default/fullchain.pem
+!live/default/privkey.pem

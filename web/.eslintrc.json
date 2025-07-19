@@ -1,0 +1,54 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true
+  },
+  "extends": [
+    "airbnb-base",
+    "plugin:vue/vue3-recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-use-before-define": [
+      "error",
+      {
+        "functions": false,
+        "classes": true,
+        "variables": true
+      }
+    ],
+    "no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_"
+      }
+    ],
+    "vue/no-mutating-props": "error",
+    "no-console": "off",
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "ForOfStatement",
+        "message": "Use métodos de array (forEach, map, etc) em vez de for...of"
+      }
+    ],
+    "import/prefer-default-export": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@", "./src"]
+        ],
+        "extensions": [".js", ".jsx", ".ts", ".tsx", ".vue", ".json"]
+      }
+    }
+  }
+}
